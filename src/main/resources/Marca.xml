@@ -1,0 +1,43 @@
+<vehiculos>
+  <vehiculo>
+    <modelo>BMW</modelo>
+    <unidades>3</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Toyota</modelo>
+    <unidades>2</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Mercedes</modelo>
+    <unidades>5</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Ford</modelo>
+    <unidades>3</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Land Rover</modelo>
+    <unidades>1</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Bentley</modelo>
+    <unidades>4</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Toyota</modelo>
+    <unidades>1</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Mini</modelo>
+    <unidades>4</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Honda</modelo>
+    <unidades>2</unidades>
+  </vehiculo>
+  <vehiculo>
+    <modelo>Mitsubishi</modelo>
+    <unidades>5</unidades>
+  </vehiculo>
+</vehiculos>
+

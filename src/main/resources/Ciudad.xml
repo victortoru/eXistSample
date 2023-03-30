@@ -1,0 +1,43 @@
+<ciudades>
+  <ciudad>
+    <RangoKM>25</RangoKM>
+    <Nombre>Madrid</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>30</RangoKM>
+    <Nombre>Barcelona</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>20</RangoKM>
+    <Nombre>Málaga</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>15</RangoKM>
+    <Nombre>Vigo</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>40</RangoKM>
+    <Nombre>Jaén</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>10</RangoKM>
+    <Nombre>Tarragona</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>2</RangoKM>
+    <Nombre>Madrid</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>15</RangoKM>
+    <Nombre>Murcia</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>4</RangoKM>
+    <Nombre>Valencia</Nombre>
+  </ciudad>
+  <ciudad>
+    <RangoKM>7</RangoKM>
+    <Nombre>Salamanca</Nombre>
+  </ciudad>
+</ciudades>
+

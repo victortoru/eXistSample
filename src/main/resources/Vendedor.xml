@@ -1,0 +1,43 @@
+<registros>
+  <registro>
+    <Profesional>si</Profesional>
+    <Particular>no</Particular>
+  </registro>
+  <registro>
+    <Profesional>si</Profesional>
+    <Particular>no</Particular>
+  </registro>
+  <registro>
+    <Profesional>si</Profesional>
+    <Particular>no</Particular>
+  </registro>
+  <registro>
+    <Profesional>no</Profesional>
+    <Particular>si</Particular>
+  </registro>
+  <registro>
+    <Profesional>no</Profesional>
+    <Particular>si</Particular>
+  </registro>
+  <registro>
+    <Profesional>si</Profesional>
+    <Particular>no</Particular>
+  </registro>
+  <registro>
+    <Profesional>si</Profesional>
+    <Particular>no</Particular>
+  </registro>
+  <registro>
+    <Profesional>no</Profesional>
+    <Particular>si</Particular>
+  </registro>
+  <registro>
+    <Profesional>si</Profesional>
+    <Particular>no</Particular>
+  </registro>
+  <registro>
+    <Profesional>si</Profesional>
+    <Particular>no</Particular>
+  </registro>
+</registros>
+
