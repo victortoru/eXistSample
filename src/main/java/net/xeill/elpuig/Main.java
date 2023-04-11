@@ -14,12 +14,27 @@ import javax.xml.xquery.XQResultSequence;
 public class Main {
 
     public static void main(String[] args) throws XQException {
-        ExistController ec = new ExistController();
-        XQResultSequence xqrs = ec.executeQuery("for $book in doc('/db/foaf/foaf/books.xml')/library/book where $book/author='Stephen King' return $book/title");
-        ec.printResultSequence(xqrs);
-        xqrs = ec.executeQuery("for $book in doc('/db/foaf/foaf/books.xml')/library/book where $book/year < 1960 return $book");
-        ec.printResultSequence(xqrs);
+        Menu menu = new Menu();
+        QueryController queryController = new QueryController();
+
+        int option = menu.mainMenu();
+        while (option > 0 && option < 4) {
+            switch (option) {
+                case 1:
+                    queryController.();
+                    break;
+
+                case 2:
+                    break;
+
+                default:
+            }
+                System.out.println("Introdueixi una de les opcions anteriors");
+                break;
+
+            }
+            option = menu.mainMenu();
+        }
 
     }
-}
 
