@@ -1,9 +1,14 @@
 package net.xeill.elpuig;
 import javax.xml.xquery.XQResultSequence;
 import java.util.Scanner;
+import net.sf.saxon.s9api.*;
+import java.io.File;
+import net.xqj.exist.ExistXQDataSource;
 
 public class QueryController {
-    Scanner sc = new Scanner(System.in);
-    ExistController ec = new ExistController();
 
+    public void ListarElemento(){
+
+    }
 }
+
