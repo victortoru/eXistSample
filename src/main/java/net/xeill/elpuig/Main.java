@@ -20,16 +20,14 @@ public class Main {
         int option = menu.mainMenu();
         while (option > 0 && option < 4) {
             switch (option) {
-                case 1:
-                    queryController.();
-                    break;
+                    case 1:
+                        queryController.ListarElemento();
+                        break;
 
                 case 2:
                     break;
-
-                default:
             }
-                System.out.println("Introdueixi una de les opcions anteriors");
+                System.out.println("Introdueix una de les opcions anteriors");
                 break;
 
             }

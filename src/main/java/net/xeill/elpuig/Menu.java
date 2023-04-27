@@ -19,7 +19,7 @@ Menu {
         do {
             System.out.println(" \nMENU PRINCIPAL \n");
             System.out.println("Escull una opció: ");
-            System.out.println("1. Seleccionar todos los elementos que contengan un texto concreto");
+            System.out.println("1. Listar elementos");
             System.out.println("2. Seleccionar todos los elementos que cumplan una condición");
             System.out.println("3. Muestra la información de las tablas");
             System.out.println("4. Eliminar varios elementos");
