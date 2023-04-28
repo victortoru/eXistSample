@@ -32,7 +32,7 @@ public class QueryController {
 
                 System.out.println("\nPrueba a listar un texto cualquiera");
                 String textoCoche = sc.next();
-                XQResultSequence xqrsCoche = ec.executeQuery("for $coche in /doc('/db/foaf/foaf/Coches.xml')/coches/coche return $coche"+textoCoche);
+                XQResultSequence xqrsCoche = ec.executeQuery("for $coche in /doc('/db/foaf/foaf/Coches.xml')/coches/coche return $coche/"+textoCoche);
                 ec.printResultSequence(xqrsCoche);
                 break;
 
