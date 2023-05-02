@@ -18,17 +18,18 @@ public class Main {
         QueryController queryController = new QueryController();
 
         int option = menu.mainMenu();
-        while (option > 0 && option < 4) {
+        while (option > 0 && option < 8) {
             switch (option) {
                     case 1:
                         queryController.ListarElemento();
                         break;
 
                     case 2:
-                        queryController.ListarCondicion();
+                        queryController.listarCondicion();
                         break;
 
                     case 3:
+                        queryController.elementoConcreto();
                         break;
 
                     case 7:

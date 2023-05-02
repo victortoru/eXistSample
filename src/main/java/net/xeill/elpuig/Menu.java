@@ -21,7 +21,7 @@ Menu {
             System.out.println("Escull una opció: ");
             System.out.println("1. Listar y seleccionar elementos");
             System.out.println("2. Seleccionar todos los elementos que cumplan una condición");
-            System.out.println("3. Muestra la información de las tablas");
+            System.out.println("3. Seleccionar algun elemento en concreto");
             System.out.println("4. Eliminar varios elementos");
             System.out.println("5. Eliminar algun elemento en concreto");
             System.out.println("6. Seleccionar elementos concretos.");
@@ -36,7 +36,7 @@ Menu {
                 System.out.println("valor no vàlid");
                 e.printStackTrace();
             }
-        } while (option != 1  && option != 0);
+        } while (option != 1 && option != 2 && option != 3 && option != 4 && option != 5 && option != 6 && option != 7);
 
         return option;
     }

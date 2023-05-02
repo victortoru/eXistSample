@@ -60,7 +60,7 @@ public class QueryController {
             }
         }
 
-    public void ListarCondicion(){
+    public void listarCondicion(){
         System.out.println("Prueba a listar alguno de estos ficheros" +
                 "\n 1.Ciudad" +
                 "\n2.Coches" +
@@ -111,9 +111,57 @@ public class QueryController {
                 XQResultSequence xqrsVendedor2 = ec.executeQuery("for $registro in /doc('/db/foaf/foaf/Vendedor.xml')/registros/registro where $registro/Profesional = '" + catVendedor + "' or $registro/Particular = '" + catVendedor + "' return $registro");
                 ec.printResultSequence(xqrsVendedor2);
                 break;
+            }
         }
+
+    public void elementoConcreto(){
+        System.out.println("Prueba a listar alguno de estos ficheros" +
+                "\n 1.Ciudad" +
+                "\n2.Coches" +
+                "\n3.Marca" +
+                "\n4.Vendedor");
+        int opcion = sc.nextInt();
+        switch (opcion){
+            case 1:
+                XQResultSequence xqrs = ec.executeQuery("for $ciudad in /doc('/db/foaf/foaf/Ciudad.xml')/ciudades/ciudad return $ciudad");
+                ec.printResultSequence(xqrs);
+
+                System.out.println("Escribe el Rango de KM para listar la o las ciudades acordes");
+                String KM = sc.next();
+                XQResultSequence xqrs1 = ec.executeQuery("for $ciudad in /doc('/db/foaf/foaf/Ciudad.xml')/ciudades/ciudad[Rango='"+KM+"'] return $ciudad");
+                ec.printResultSequence(xqrs1);
+                break;
+
+            case 2:
+                XQResultSequence xqrsCoche = ec.executeQuery("for $coche in /doc('/db/foaf/foaf/Coches.xml')/coches/coche return $coche");
+                ec.printResultSequence(xqrsCoche);
+
+                System.out.println("Escribe el tipo de combustible por el que deseas listar el vehiculo");
+                String combustible = sc.next();
+                XQResultSequence xqrsCoche2 = ec.executeQuery("for $coche in /doc('/db/foaf/foaf/Coches.xml')/coches/coche[combustible='"+ combustible +"'] return coche");
+                ec.printResultSequence(xqrsCoche2);
+                break;
+
+            case 3:
+                XQResultSequence xqrsMarca = ec.executeQuery("for $vehiculo in /doc('/db/foaf/foaf/Marca.xml')/vehiculos/vehiculo return $vehiculo");
+                ec.printResultSequence(xqrsMarca);
+
+                System.out.println("Escribe la marca del vehiculo que deseas filtrar");
+                String modelo = sc.next();
+                XQResultSequence xqrsMarca2 = ec.executeQuery("for $vehiculo in /doc('/db/foaf/foaf/Marca.xml')/vehiculos/vehiculo[modelo='"+ modelo +"'] return $vehiculo");
+                ec.printResultSequence(xqrsMarca2);
+                break;
+
+            case 4:
+                XQResultSequence xqrsVendedor = ec.executeQuery("for $registro in /doc('/db/foaf/foaf/Vendedor.xml')/registros/registro return $registro");
+                ec.printResultSequence(xqrsVendedor);
+
+                System.out.println("Escribe si o no según para filtrar a los vendedores particulares o profesionales");
+                String vendedor = sc.next();
+                XQResultSequence result = ec.executeQuery("for $registro in /doc('/db/foaf/foaf/Vendedor.xml')/registros/registro[vendedor='"+ vendedor +"'] return $vendedor");
+                ec.printResultSequence(result);
+                break;
+            }
+        }
+
     }
-
-
-
-}
