@@ -24,10 +24,17 @@ public class Main {
                         queryController.ListarElemento();
                         break;
 
-                case 2:
-                    break;
+                    case 2:
+                        queryController.ListarCondicion();
+                        break;
+
+                    case 3:
+                        break;
+
+                    case 7:
+                        break;
             }
-                System.out.println("Introdueix una de les opcions anteriors");
+                System.out.println("Introduce alguna opción anterior");
                 break;
 
             }
